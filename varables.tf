@@ -9,3 +9,9 @@ variable "image" {
     default = ""
   
 }
+
+variable "cidr" {
+    type = string
+    default = ""
+  
+}
