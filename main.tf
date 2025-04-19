@@ -1,9 +1,7 @@
-resource "aws_instance" "ec2" {
-    ami = var.image
-    instance_type = var.type
-    tags = {
-        Name = "new instance"
-    }
-  
-}
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "terraforms3devtesttt" # Replace placeholders
 
+  tags = {
+    Name = "terraforms3"
+  }
+}
